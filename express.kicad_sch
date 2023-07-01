@@ -4855,7 +4855,7 @@
 
   (sheet (at 123.19 149.86) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid 1b9f3107-ef70-49e9-a809-386f50e62a79)
     (property "Sheetname" " Expression Input 4" (at 123.19 149.1484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -4884,7 +4884,7 @@
 
   (sheet (at 27.94 187.96) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid 312347d7-84e6-4268-a248-c9b2a36bb6f6)
     (property "Sheetname" " Expression Input 13" (at 27.94 187.2484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -4913,7 +4913,7 @@
 
   (sheet (at 59.69 175.26) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid 47562554-feb5-45f8-a0f8-2d2a3893dfc3)
     (property "Sheetname" " Expression Input 10" (at 59.69 174.5484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -4942,7 +4942,7 @@
 
   (sheet (at 123.19 187.96) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid 67537a41-8b60-447c-a5a6-7033ce89e093)
     (property "Sheetname" " Expression Input 16" (at 123.19 187.2484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -4971,7 +4971,7 @@
 
   (sheet (at 59.69 149.86) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid 8c416fb8-c0ba-4bfa-ac48-05a844c0bd05)
     (property "Sheetname" " Expression Input 2" (at 59.69 149.1484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -5000,7 +5000,7 @@
 
   (sheet (at 59.69 162.56) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid 8f66e91c-13b0-4c90-9031-a05e96765c69)
     (property "Sheetname" " Expression Input 6" (at 59.69 161.8484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -5029,7 +5029,7 @@
 
   (sheet (at 59.69 187.96) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid 96943c6a-c737-490e-a103-5b172ba6d4d3)
     (property "Sheetname" " Expression Input 14" (at 59.69 187.2484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -5058,7 +5058,7 @@
 
   (sheet (at 27.94 149.86) (size 19.05 7.62)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid 970e7b1b-3d39-40bf-a881-e4c7b552e176)
     (property "Sheetname" " Expression Input 1" (at 27.94 149.1484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -5087,7 +5087,7 @@
 
   (sheet (at 91.44 149.86) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid a78be59b-023a-46a1-9cb2-51407c37669a)
     (property "Sheetname" " Expression Input 3" (at 91.44 149.1484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -5116,7 +5116,7 @@
 
   (sheet (at 123.19 139.7) (size 19.05 5.08) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid ae0f3fb3-3b08-46e7-ba0a-341c37aaf317)
     (property "Sheetname" "MIDI Out" (at 123.19 138.9884 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -5137,7 +5137,7 @@
 
   (sheet (at 91.44 175.26) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid bb3901a8-5d47-4234-bca5-b638135d1ffb)
     (property "Sheetname" " Expression Input 11" (at 91.44 174.5484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -5166,7 +5166,7 @@
 
   (sheet (at 91.44 187.96) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid bdd0a9be-2845-432f-aabb-f6e051c3d5c8)
     (property "Sheetname" " Expression Input 15" (at 91.44 187.2484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -5195,7 +5195,7 @@
 
   (sheet (at 27.94 162.56) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid d1132e7e-a0f6-4fe0-a93b-80f9a13e882b)
     (property "Sheetname" " Expression Input 5 " (at 27.94 161.8484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -5224,7 +5224,7 @@
 
   (sheet (at 91.44 162.56) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid d7a0d8f1-4b44-42b1-8634-8319ce87a700)
     (property "Sheetname" " Expression Input 7" (at 91.44 161.8484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -5253,7 +5253,7 @@
 
   (sheet (at 123.19 175.26) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid e4570eee-0b80-4673-b35d-36d8f934c951)
     (property "Sheetname" " Expression Input 12" (at 123.19 174.5484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -5282,7 +5282,7 @@
 
   (sheet (at 123.19 162.56) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid e8e94c36-4a29-46f6-83bd-843a652953f4)
     (property "Sheetname" " Expression Input 8" (at 123.19 161.8484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -5311,7 +5311,7 @@
 
   (sheet (at 27.94 175.26) (size 19.05 7.62) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
+    (fill (color 255 255 194 1.0000))
     (uuid f5b3513e-a1ff-4f01-bbcd-dc6c405b4bcc)
     (property "Sheetname" " Expression Input 9" (at 27.94 174.5484 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
