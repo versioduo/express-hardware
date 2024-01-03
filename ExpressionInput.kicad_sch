@@ -6,7 +6,7 @@
 
   (title_block
     (title "Expression Input")
-    (date "2023-06-03")
+    (date "2024-01-03")
     (rev "2")
     (company "Versio Duo")
   )
@@ -840,7 +840,7 @@
   (symbol (lib_id "Device:R_Small") (at 140.97 93.98 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 175fba69-0f83-4252-b639-b5fea8b33a4d)
-    (property "Reference" "R104" (at 143.51 92.7101 0)
+    (property "Reference" "R301" (at 143.51 92.7101 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 143.51 95.25 0)
@@ -856,9 +856,6 @@
     (pin "2" (uuid 3acd0170-e26e-4766-9fdd-7858dbabe6e7))
     (instances
       (project "express"
-        (path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-          (reference "R104") (unit 1)
-        )
         (path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/970e7b1b-3d39-40bf-a881-e4c7b552e176"
           (reference "R301") (unit 1)
         )
@@ -914,7 +911,7 @@
   (symbol (lib_id "Device:R_Small") (at 154.94 101.6 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1e3ab358-7698-40e5-9c66-01fbe72d6f97)
-    (property "Reference" "R104" (at 157.4801 104.14 90)
+    (property "Reference" "R302" (at 157.4801 104.14 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 156.2101 106.68 90)
@@ -930,9 +927,6 @@
     (pin "2" (uuid 6a91e220-97db-465f-85d0-92c79052142c))
     (instances
       (project "express"
-        (path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-          (reference "R104") (unit 1)
-        )
         (path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/970e7b1b-3d39-40bf-a881-e4c7b552e176"
           (reference "R302") (unit 1)
         )
@@ -1268,7 +1262,7 @@
   (symbol (lib_id "V2_Connector_Audio:SJ2-25504B-SMT-TR") (at 109.22 100.33 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7af854b2-31fd-4a23-abfc-5d9c770f9f16)
-    (property "Reference" "J?" (at 101.6 85.725 0)
+    (property "Reference" "J301" (at 101.6 85.725 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SJ2-25504B-SMT-TR" (at 118.11 88.265 0)
@@ -1291,9 +1285,6 @@
     (pin "5" (uuid 33739521-568f-4816-b67b-c87a96495f0a))
     (instances
       (project "express"
-        (path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-          (reference "J?") (unit 1)
-        )
         (path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/970e7b1b-3d39-40bf-a881-e4c7b552e176"
           (reference "J301") (unit 1)
         )
@@ -1349,7 +1340,7 @@
   (symbol (lib_id "Device:C_Small") (at 198.12 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aeb2c59b-892c-4cb9-a5ed-7adac2880571)
-    (property "Reference" "C101" (at 207.01 104.14 0)
+    (property "Reference" "C301" (at 207.01 104.14 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0u1" (at 205.74 106.6862 0)
@@ -1365,9 +1356,6 @@
     (pin "2" (uuid a1bd7304-4600-4365-ab46-583daf0c8bd0))
     (instances
       (project "express"
-        (path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-          (reference "C101") (unit 1)
-        )
         (path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/970e7b1b-3d39-40bf-a881-e4c7b552e176"
           (reference "C301") (unit 1)
         )
@@ -1775,7 +1763,7 @@
   (symbol (lib_id "V2_LED:WS2812") (at 156.21 138.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e505fdf7-85d2-4a5f-b2cb-b07ef1215124)
-    (property "Reference" "D?" (at 153.67 128.27 0)
+    (property "Reference" "D301" (at 153.67 128.27 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "WS2812" (at 154.94 130.81 0)
@@ -1793,9 +1781,6 @@
     (pin "4" (uuid 23d8c46c-e5f3-4f99-a330-fe8c61eebc91))
     (instances
       (project "express"
-        (path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-          (reference "D?") (unit 1)
-        )
         (path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/970e7b1b-3d39-40bf-a881-e4c7b552e176"
           (reference "D301") (unit 1)
         )
@@ -1851,7 +1836,7 @@
   (symbol (lib_id "Device:R_Small") (at 140.97 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f7069b94-fb36-4961-aa8f-6d263ab88bb9)
-    (property "Reference" "R104" (at 148.59 104.1399 0)
+    (property "Reference" "R303" (at 148.59 104.1399 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 147.32 106.68 0)
@@ -1867,9 +1852,6 @@
     (pin "2" (uuid 67fd4227-c634-44b9-add9-4b8709903fdb))
     (instances
       (project "express"
-        (path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-          (reference "R104") (unit 1)
-        )
         (path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/970e7b1b-3d39-40bf-a881-e4c7b552e176"
           (reference "R303") (unit 1)
         )
