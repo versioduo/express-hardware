@@ -1865,7 +1865,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 143.51 95.25 0)
 			(effects
 				(font
@@ -1994,7 +1994,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 156.2101 106.68 90)
 			(effects
 				(font
@@ -2615,7 +2615,7 @@
 		(at 109.22 100.33 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2659,15 +2659,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 109.22 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 109.22 100.33 0)
 			(effects
 				(font
@@ -2773,21 +2764,21 @@
 		(dnp no)
 		(uuid "aeb2c59b-892c-4cb9-a5ed-7adac2880571")
 		(property "Reference" "C301"
-			(at 207.01 104.14 0)
+			(at 201.168 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "0u1"
-			(at 205.74 106.6862 0)
+		(property "Value" "0u022"
+			(at 201.168 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
