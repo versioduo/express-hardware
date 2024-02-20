@@ -257,14 +257,14 @@
 					(name ""
 						(effects
 							(font
-								(size 0.0254 0.0254)
+								(size 0 0)
 							)
 						)
 					)
 					(number "3"
 						(effects
 							(font
-								(size 0.0254 0.0254)
+								(size 0 0)
 							)
 						)
 					)
@@ -293,14 +293,14 @@
 					(name ""
 						(effects
 							(font
-								(size 0.0254 0.0254)
+								(size 0 0)
 							)
 						)
 					)
 					(number "5"
 						(effects
 							(font
-								(size 0.0254 0.0254)
+								(size 0 0)
 							)
 						)
 					)
@@ -2113,7 +2113,7 @@
 		(lib_id "V2_Connector_Audio:SJ2-25504B-SMT-TR")
 		(at 198.12 107.95 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2155,6 +2155,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 198.12 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 198.12 107.95 0)
 			(effects
 				(font
