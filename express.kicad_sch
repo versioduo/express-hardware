@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "V2 express")
-		(date "2024-02-02")
-		(rev "4")
+		(date "2024-03-11")
+		(rev "5")
 		(company "Versio Duo")
 		(comment 1 "Expression Controller")
 	)
@@ -4323,9 +4323,9 @@
 		)
 		(symbol "power:+3V3"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4423,8 +4423,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3V3"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4443,9 +4443,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4543,8 +4543,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4563,9 +4563,9 @@
 		)
 		(symbol "power:Earth"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4584,7 +4584,6 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
@@ -4676,8 +4675,8 @@
 			(symbol "Earth_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "Earth"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4696,9 +4695,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4772,8 +4771,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4855,7 +4854,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7350,7 +7349,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 274.32 58.42 0)
 			(effects
 				(font
@@ -7497,7 +7496,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 201.93 38.1 0)
 			(effects
 				(font
@@ -7563,7 +7562,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 26.67 48.26 0)
 			(effects
 				(font
@@ -7588,7 +7587,7 @@
 		(lib_id "V2_Production:Layer_Numbers")
 		(at 227.33 175.26 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7630,15 +7629,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 227.33 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 227.33 175.26 0)
 			(effects
 				(font
@@ -7699,7 +7689,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 252.73 27.94 0)
 			(effects
 				(font
@@ -7769,7 +7759,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 57.15 22.86 0)
 			(effects
 				(font
@@ -7839,7 +7829,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 88.9 22.86 0)
 			(effects
 				(font
@@ -7997,7 +7987,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 269.24 95.25 0)
 			(effects
 				(font
@@ -8062,7 +8052,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Two pin crystal, small symbol"
 			(at 24.13 41.91 0)
 			(effects
 				(font
@@ -8130,7 +8120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode, small symbol"
 			(at 132.08 55.88 0)
 			(effects
 				(font
@@ -8158,7 +8148,7 @@
 		(lib_id "V2_Mechanical:MountingHole_3mm")
 		(at 248.92 162.56 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -8198,16 +8188,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 248.92 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
+		(property "Description" "Mounting Hole without connection"
 			(at 248.92 162.56 0)
 			(effects
 				(font
@@ -8270,7 +8251,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 201.93 43.18 0)
 			(effects
 				(font
@@ -8336,7 +8317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 248.92 53.34 0)
 			(effects
 				(font
@@ -8413,7 +8394,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 201.93 40.64 0)
 			(effects
 				(font
@@ -8483,7 +8464,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 26.67 45.72 0)
 			(effects
 				(font
@@ -8553,7 +8534,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
 			(at 270.51 115.57 0)
 			(effects
 				(font
@@ -8620,7 +8601,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 214.63 93.98 0)
 			(effects
 				(font
@@ -8687,7 +8668,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 198.12 82.55 0)
 			(effects
 				(font
@@ -8712,7 +8693,7 @@
 		(lib_id "V2_PCB_Devices:Button-bottom")
 		(at 226.06 159.385 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -8754,15 +8735,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 226.06 159.385 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 226.06 159.385 0)
 			(effects
 				(font
@@ -8825,7 +8797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 255.27 115.57 0)
 			(effects
 				(font
@@ -8891,7 +8863,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 274.32 45.72 0)
 			(effects
 				(font
@@ -8916,7 +8888,7 @@
 		(lib_id "V2_Spacer_Wurth:9774030243")
 		(at 172.72 160.02 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -8957,15 +8929,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 172.72 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 172.72 160.02 0)
 			(effects
 				(font
@@ -9031,7 +8994,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 212.09 91.44 0)
 			(effects
 				(font
@@ -9101,7 +9064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 260.35 113.03 0)
 			(effects
 				(font
@@ -9169,7 +9132,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 177.8 123.19 0)
 			(effects
 				(font
@@ -9235,7 +9198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 78.74 25.4 0)
 			(effects
 				(font
@@ -9260,7 +9223,7 @@
 		(lib_id "V2_Spacer_Wurth:9774030243")
 		(at 172.72 182.88 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -9309,15 +9272,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 172.72 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "30a5c5b0-3b7c-449c-9637-8f70fb804c1f")
 		)
@@ -9334,7 +9288,7 @@
 		(lib_id "V2_Cortex_Debug:Cortex_Debug")
 		(at 132.08 96.52 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -9375,15 +9329,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 132.08 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 132.08 96.52 0)
 			(effects
 				(font
@@ -9465,7 +9410,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
 			(at 167.64 182.88 0)
 			(effects
 				(font
@@ -9599,7 +9544,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 53.34 46.99 0)
 			(effects
 				(font
@@ -9624,7 +9569,7 @@
 		(lib_id "V2_Mechanical:MountingHole_3mm")
 		(at 248.92 175.26 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -9664,16 +9609,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 248.92 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
+		(property "Description" "Mounting Hole without connection"
 			(at 248.92 175.26 0)
 			(effects
 				(font
@@ -9737,7 +9673,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 120.65 101.6 0)
 			(effects
 				(font
@@ -9803,7 +9739,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 266.7 53.34 0)
 			(effects
 				(font
@@ -9878,7 +9814,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 185.42 124.46 0)
 			(effects
 				(font
@@ -9943,7 +9879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 177.8 38.1 0)
 			(effects
 				(font
@@ -10011,7 +9947,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "SAM D51 Microchip SMART ARM Cortex-M4F-based MCU, 256K Flash, 128K SRAM, TQFP-64"
 			(at 69.85 78.74 0)
 			(effects
 				(font
@@ -10231,7 +10167,7 @@
 		(lib_id "V2_Spacer_Wurth:9774030243")
 		(at 172.72 167.64 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -10272,15 +10208,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 172.72 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 172.72 167.64 0)
 			(effects
 				(font
@@ -10347,7 +10274,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 247.65 27.94 0)
 			(effects
 				(font
@@ -10372,7 +10299,7 @@
 		(lib_id "V2_Production:Order_Number")
 		(at 205.74 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -10413,15 +10340,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 205.74 177.8 0)
 			(effects
 				(font
@@ -10485,7 +10403,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 120.65 91.44 0)
 			(effects
 				(font
@@ -10510,7 +10428,7 @@
 		(lib_id "V2_Spacer_Wurth:9774030243")
 		(at 172.72 175.26 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -10551,15 +10469,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 172.72 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 172.72 175.26 0)
 			(effects
 				(font
@@ -10625,7 +10534,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 177.8 40.64 0)
 			(effects
 				(font
@@ -10695,7 +10604,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 64.77 142.24 0)
 			(effects
 				(font
@@ -10761,7 +10670,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 119.38 22.86 0)
 			(effects
 				(font
@@ -10830,7 +10739,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 198.12 82.55 0)
 			(effects
 				(font
@@ -10896,7 +10805,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 212.09 93.98 0)
 			(effects
 				(font
@@ -10965,7 +10874,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 177.8 43.18 0)
 			(effects
 				(font
@@ -11030,7 +10939,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 232.41 99.06 0)
 			(effects
 				(font
@@ -11055,7 +10964,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 275.59 149.86 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -11096,16 +11005,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 275.59 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
+		(property "Description" "Fiducial Marker"
 			(at 275.59 149.86 0)
 			(effects
 				(font
@@ -11168,7 +11068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 72.39 20.32 0)
 			(effects
 				(font
@@ -11234,7 +11134,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 255.27 113.03 0)
 			(effects
 				(font
@@ -11304,7 +11204,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
 			(at 177.8 124.46 0)
 			(effects
 				(font
@@ -11370,7 +11270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 57.15 25.4 0)
 			(effects
 				(font
@@ -11436,7 +11336,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 190.5 48.26 0)
 			(effects
 				(font
@@ -11500,7 +11400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 50.8 120.65 0)
 			(effects
 				(font
@@ -11570,7 +11470,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 142.24 55.88 0)
 			(effects
 				(font
@@ -11637,7 +11537,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 21.59 45.72 0)
 			(effects
 				(font
@@ -11704,7 +11604,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 139.7 55.88 0)
 			(effects
 				(font
@@ -11774,7 +11674,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 269.24 97.79 0)
 			(effects
 				(font
@@ -11841,7 +11741,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 99.06 22.86 0)
 			(effects
 				(font
@@ -11869,7 +11769,7 @@
 		(lib_id "V2_Mechanical:MountingHole_3mm")
 		(at 248.92 149.86 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -11909,16 +11809,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 248.92 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
+		(property "Description" "Mounting Hole without connection"
 			(at 248.92 149.86 0)
 			(effects
 				(font
@@ -11981,7 +11872,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 78.74 22.86 0)
 			(effects
 				(font
@@ -12050,7 +11941,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 21.59 48.26 0)
 			(effects
 				(font
@@ -12116,7 +12007,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 67.31 125.73 0)
 			(effects
 				(font
@@ -12141,7 +12032,7 @@
 		(lib_id "V2_Spacer_Wurth:9774030243")
 		(at 172.72 152.4 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -12182,15 +12073,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 172.72 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 172.72 152.4 0)
 			(effects
 				(font
@@ -12257,7 +12139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 214.63 91.44 0)
 			(effects
 				(font
@@ -12322,7 +12204,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 185.42 123.19 0)
 			(effects
 				(font
@@ -12388,7 +12270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 48.26 120.65 0)
 			(effects
 				(font
@@ -12413,7 +12295,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 275.59 162.56 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -12453,16 +12335,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 275.59 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
+		(property "Description" "Fiducial Marker"
 			(at 275.59 162.56 0)
 			(effects
 				(font
@@ -12524,7 +12397,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 134.62 73.66 0)
 			(effects
 				(font
@@ -12593,7 +12466,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 109.22 22.86 0)
 			(effects
 				(font
@@ -12621,7 +12494,7 @@
 		(lib_id "V2_Connector_USB:JAE_DX07S016JA3")
 		(at 185.42 101.6 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -12662,15 +12535,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 185.42 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 185.42 101.6 0)
 			(effects
 				(font
@@ -12765,7 +12629,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 232.41 91.44 0)
 			(effects
 				(font
@@ -12832,7 +12696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 129.54 73.66 0)
 			(effects
 				(font
@@ -12926,7 +12790,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 275.59 175.26 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -12967,16 +12831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 275.59 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
+		(property "Description" "Fiducial Marker"
 			(at 275.59 175.26 0)
 			(effects
 				(font
@@ -13040,7 +12895,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 72.39 142.24 0)
 			(effects
 				(font
@@ -13107,7 +12962,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 48.26 22.86 0)
 			(effects
 				(font
@@ -13135,7 +12990,7 @@
 		(lib_id "V2_Artwork:Board_express")
 		(at 204.47 168.91 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -13185,15 +13040,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 204.47 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "express"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -13207,7 +13053,7 @@
 		(lib_id "V2_Artwork:V2-logo")
 		(at 205.74 153.67 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -13249,15 +13095,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 205.74 153.67 0)
 			(effects
 				(font

@@ -1304,9 +1304,9 @@
 		)
 		(symbol "power:+3V3"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1404,8 +1404,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3V3"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1424,9 +1424,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1524,8 +1524,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1544,9 +1544,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1620,8 +1620,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1662,12 +1662,22 @@
 		(uuid "4426af02-1399-494e-920c-0913c6b37067")
 	)
 	(no_connect
-		(at 124.46 99.06)
-		(uuid "502b247d-8b2c-4a70-a3a2-767061eee2db")
+		(at 124.46 96.52)
+		(uuid "75cdb461-d8de-4995-8add-680eb08112df")
 	)
 	(no_connect
 		(at 124.46 106.68)
 		(uuid "7846bc3a-9dfe-4043-a6fc-916c8de0ba8b")
+	)
+	(wire
+		(pts
+			(xy 140.97 96.52) (xy 140.97 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "049559c1-2d53-452c-9e0f-a360790aebc5")
 	)
 	(polyline
 		(pts
@@ -1688,6 +1698,16 @@
 			(type default)
 		)
 		(uuid "5ba2849f-07db-4858-8b98-5c0fb2ceb09b")
+	)
+	(wire
+		(pts
+			(xy 140.97 99.06) (xy 124.46 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6829119b-636b-4406-aa6c-ab60a7fed642")
 	)
 	(polyline
 		(pts
@@ -1718,16 +1738,6 @@
 			(type default)
 		)
 		(uuid "ad68e324-ea23-4381-a9fd-c4ed3909a94f")
-	)
-	(wire
-		(pts
-			(xy 124.46 96.52) (xy 140.97 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b399544b-856f-4d1b-b58a-bd3922a304c4")
 	)
 	(polyline
 		(pts
@@ -1790,7 +1800,7 @@
 		(uuid "eebe8beb-78ae-4c54-ba1c-79da906f6732")
 	)
 	(label "Tip"
-		(at 133.35 101.6 0)
+		(at 130.81 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1801,7 +1811,7 @@
 		(uuid "fd212bc7-7578-4d12-ba57-71c80c70233d")
 	)
 	(label "Ring"
-		(at 133.35 96.52 0)
+		(at 130.81 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1849,7 +1859,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 140.97 93.98 180)
+		(at 140.97 88.9 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1857,7 +1867,7 @@
 		(dnp no)
 		(uuid "175fba69-0f83-4252-b639-b5fea8b33a4d")
 		(property "Reference" "R301"
-			(at 143.51 92.7101 0)
+			(at 143.51 87.6301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1866,7 +1876,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 143.51 95.25 0)
+			(at 143.51 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1875,7 +1885,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 140.97 93.98 0)
+			(at 140.97 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1884,7 +1894,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 93.98 0)
+			(at 140.97 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1892,8 +1902,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 140.97 93.98 0)
+		(property "Description" "Resistor, small symbol"
+			(at 140.97 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2021,7 +2031,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 154.94 101.6 0)
 			(effects
 				(font
@@ -2150,7 +2160,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 140.97 86.36 0)
 			(effects
 				(font
@@ -2276,7 +2286,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 140.97 106.68 0)
 			(effects
 				(font
@@ -2403,7 +2413,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 163.83 134.62 0)
 			(effects
 				(font
@@ -2529,7 +2539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 198.12 106.68 0)
 			(effects
 				(font
@@ -2615,7 +2625,7 @@
 		(at 109.22 100.33 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2659,15 +2669,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 109.22 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 109.22 100.33 0)
 			(effects
 				(font
@@ -2808,7 +2809,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 198.12 104.14 0)
 			(effects
 				(font
@@ -3068,7 +3069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 163.83 139.7 0)
 			(effects
 				(font
@@ -3194,7 +3195,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 166.37 109.22 0)
 			(effects
 				(font
@@ -3319,7 +3320,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 124.46 93.98 0)
 			(effects
 				(font
@@ -3402,7 +3403,7 @@
 	)
 	(symbol
 		(lib_id "V2_Diode:RB501SM")
-		(at 140.97 88.9 90)
+		(at 140.97 93.98 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3410,7 +3411,7 @@
 		(dnp no)
 		(uuid "def6f419-8efe-40ff-b093-e96e76385c05")
 		(property "Reference" "D302"
-			(at 148.59 87.63 90)
+			(at 148.59 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3419,7 +3420,7 @@
 			)
 		)
 		(property "Value" "RB501SM"
-			(at 152.4 90.17 90)
+			(at 152.4 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3428,7 +3429,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 147.955 88.9 0)
+			(at 147.955 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3437,7 +3438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 88.9 0)
+			(at 140.97 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3446,7 +3447,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 140.97 88.9 0)
+			(at 140.97 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3574,7 +3575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 156.21 138.43 0)
 			(effects
 				(font
@@ -3709,7 +3710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 140.97 104.14 0)
 			(effects
 				(font
