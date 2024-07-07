@@ -2145,7 +2145,7 @@
 		(lib_id "V2_Connector_Audio:SJ2-25504B-SMT-TR")
 		(at 198.12 107.95 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
