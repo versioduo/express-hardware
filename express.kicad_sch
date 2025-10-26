@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "V2 express")
-		(date "2025-09-19")
-		(rev "2")
+		(date "2025-10-26")
+		(rev "3")
 		(company "Versio Duo")
 		(comment 1 "Expression Controller")
 	)
@@ -1110,7 +1110,7 @@
 			(symbol "V2-logo_1_0"
 				(polyline
 					(pts
-						(xy -3.302 2.54) (xy 3.048 2.54) (xy 3.048 -2.54) (xy -3.302 -2.54) (xy -3.302 -1.27)
+						(xy -3.302 2.54) (xy 2.54 2.54) (xy 2.54 -2.54) (xy -3.302 -2.54) (xy -3.302 -1.27)
 					)
 					(stroke
 						(width 0.3)
@@ -1120,11 +1120,14 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "V2-logo_1_1"
 				(text "V2"
-					(at -0.2055 -0.4053 0)
+					(at -0.508 -0.254 0)
 					(effects
 						(font
 							(size 3 3)
+							(thickness 0.375)
 						)
 					)
 				)
@@ -7020,7 +7023,7 @@
 		(lib_id "V2_Artwork:Arrow_Out")
 		(at 228.6 130.81 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7064,6 +7067,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 228.6 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 228.6 130.81 0)
 			(effects
 				(font
@@ -7298,7 +7310,7 @@
 		(lib_id "V2_Production:Layer_Numbers")
 		(at 228.6 177.8 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7340,6 +7352,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 228.6 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 228.6 177.8 0)
 			(effects
 				(font
@@ -7868,7 +7889,7 @@
 		(lib_id "V2_Mechanical:MountingHole_3mm")
 		(at 252.73 153.67 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7909,6 +7930,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 252.73 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 252.73 153.67 0)
 			(effects
 				(font
@@ -8212,7 +8242,7 @@
 		(lib_id "V2_PCB_Devices:Button-bottom")
 		(at 203.2 166.37 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -8254,6 +8284,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 203.2 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 203.2 166.37 0)
 			(effects
 				(font
@@ -8341,7 +8380,7 @@
 		(lib_id "V2_Spacer_Wurth:9774030243")
 		(at 172.72 165.1 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -8382,6 +8421,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 172.72 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 172.72 165.1 0)
 			(effects
 				(font
@@ -8472,7 +8520,7 @@
 		(lib_id "V2_Spacer_Wurth:9774030243")
 		(at 172.72 187.96 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -8521,6 +8569,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 172.72 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "30a5c5b0-3b7c-449c-9637-8f70fb804c1f")
 		)
@@ -8537,7 +8594,7 @@
 		(lib_id "V2_Cortex_Debug:Cortex_Debug")
 		(at 132.08 96.52 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -8578,6 +8635,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 132.08 96.52 0)
 			(effects
 				(font
@@ -8751,7 +8817,7 @@
 		(lib_id "V2_Mechanical:MountingHole_3mm")
 		(at 252.73 166.37 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -8792,6 +8858,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 252.73 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 252.73 166.37 0)
 			(effects
 				(font
@@ -9349,7 +9424,7 @@
 		(lib_id "V2_Spacer_Wurth:9774030243")
 		(at 172.72 172.72 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -9390,6 +9465,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 172.72 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 172.72 172.72 0)
 			(effects
 				(font
@@ -9546,7 +9630,7 @@
 		(lib_id "V2_Production:Order_Number")
 		(at 204.47 177.8 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -9587,6 +9671,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 204.47 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 204.47 177.8 0)
 			(effects
 				(font
@@ -9675,7 +9768,7 @@
 		(lib_id "V2_PCB_Devices:PCB_Plug_Horizontal")
 		(at 212.09 148.59 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -9724,6 +9817,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 212.09 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "express"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -9737,7 +9839,7 @@
 		(lib_id "V2_Spacer_Wurth:9774030243")
 		(at 172.72 180.34 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -9778,6 +9880,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 172.72 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 172.72 180.34 0)
 			(effects
 				(font
@@ -10138,7 +10249,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 275.59 140.97 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -10180,6 +10291,15 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
+			(at 275.59 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 275.59 140.97 0)
 			(effects
 				(font
@@ -10807,7 +10927,7 @@
 		(lib_id "V2_Mechanical:MountingHole_3mm")
 		(at 252.73 140.97 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -10848,6 +10968,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 252.73 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 252.73 140.97 0)
 			(effects
 				(font
@@ -11070,7 +11199,7 @@
 		(lib_id "V2_Spacer_Wurth:9774030243")
 		(at 172.72 157.48 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -11111,6 +11240,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 172.72 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 172.72 157.48 0)
 			(effects
 				(font
@@ -11201,7 +11339,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 275.59 153.67 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -11242,6 +11380,15 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
+			(at 275.59 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 275.59 153.67 0)
 			(effects
 				(font
@@ -11532,7 +11679,7 @@
 		(lib_id "V2_Artwork:Arrow_In")
 		(at 212.09 130.81 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -11576,6 +11723,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 212.09 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 212.09 130.81 0)
 			(effects
 				(font
@@ -11731,7 +11887,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 275.59 166.37 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -11773,6 +11929,15 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
+			(at 275.59 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 275.59 166.37 0)
 			(effects
 				(font
@@ -11931,7 +12096,7 @@
 		(lib_id "V2_Artwork:Board_express")
 		(at 189.23 148.59 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -11981,6 +12146,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 189.23 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "express"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -11994,7 +12168,7 @@
 		(lib_id "V2_Artwork:V2-logo")
 		(at 172.72 147.32 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -12044,6 +12218,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 172.72 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "express"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -12057,7 +12240,7 @@
 		(lib_id "V2_PCB_Devices:PCB_Plug_Horizontal")
 		(at 234.95 148.59 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -12098,6 +12281,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 234.95 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 234.95 148.59 0)
 			(effects
 				(font

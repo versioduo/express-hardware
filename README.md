@@ -13,3 +13,6 @@
 ## Bill Of Materials
 
 [Interactive BOM](https://htmlpreview.github.io/?https://github.com/versioduo/express-hardware/main/express-bom.html)
+
+# Copying
+Anyone can use this public domain work without having to seek authorisation, no one can ever own it.

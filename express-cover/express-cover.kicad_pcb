@@ -1,26 +1,29 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.59)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(date "2025-10-27")
+	)
 	(layers
 		(0 "F.Cu" signal "Front")
-		(31 "B.Cu" signal "Back")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(49 "F.Fab" user)
+		(2 "B.Cu" signal "Back")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
 	)
 	(setup
 		(stackup
@@ -68,10 +71,11 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(grid_origin 117 115)
 		(pcbplotparams
-			(layerselection 0x00010d0_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_575555df)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions yes)
 			(usegerberattributes yes)
@@ -81,7 +85,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 6)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -89,16 +92,19 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue no)
-			(plotfptext yes)
-			(plotinvisibletext no)
+			(plot_black_and_white yes)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
@@ -114,7 +120,7 @@
 		(layer "F.Cu")
 		(uuid "2ae44526-195c-49c1-9a44-ef7a85f14b38")
 		(at 258 110)
-		(property "Reference" "H109"
+		(property "Reference" "H108"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -127,7 +133,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -140,19 +146,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "35cc2496-ab76-414d-9db5-710c8665428b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -161,6 +155,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -173,6 +168,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -189,7 +185,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/2bae0554-a6b5-41e1-a040-fa4014ad6519")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -198,9 +197,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "3c8c3d86-8f6e-4943-9836-a07b28f0129f")
+			(uuid "bd266d5e-1ed0-4f26-be47-29a3b86a5c29")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -239,12 +238,13 @@
 			)
 			(uuid "e03618c2-51d7-4fd0-8310-7d045d71e608")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_5.2mm"
 		(layer "F.Cu")
 		(uuid "454cb730-15d1-4902-8a85-6569c431c521")
-		(at 283 110)
-		(property "Reference" "H102"
+		(at 282 110)
+		(property "Reference" "H104"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -257,7 +257,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_5.2mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -270,19 +270,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_5.2mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3c56134e-dc18-4751-8910-cb6b6e05faf3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -291,6 +279,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -303,6 +292,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -319,7 +309,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/b5a9ea4e-8814-429b-a837-07a2647096fd")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -328,9 +321,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "d82ae6c2-8aed-4883-8e31-0b768e17e8da")
+			(uuid "992639dd-701b-4ec4-9bb0-1c1b9233e330")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -369,12 +362,13 @@
 			)
 			(uuid "1266c390-8a1f-45d4-9341-2e8a5b1f6689")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "4b6c1d04-866d-4c16-8b8b-1251702679b8")
 		(at 173 110)
-		(property "Reference" "H118"
+		(property "Reference" "H112"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -387,7 +381,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -400,19 +394,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8161fbfc-ca67-45cd-8d5d-ac6178cb493f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -421,6 +403,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -433,6 +416,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -449,7 +433,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/04c7cd26-4a12-4507-8e0f-b56c6b5634fd")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -458,9 +445,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "7dd5bbeb-33a9-44f2-88b1-69cd143311b1")
+			(uuid "b7939a9d-8665-4910-85bd-d076fef9b70d")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -499,12 +486,13 @@
 			)
 			(uuid "190069c2-69be-47a5-8d51-5242324aeb76")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Artwork:Logo_Small"
 		(layer "F.Cu")
 		(uuid "552eacff-0ed8-4174-aeef-cc4ed8dd5e1b")
-		(at 123.25 110)
-		(property "Reference" "ICON102"
+		(at 123.75 110)
+		(property "Reference" "ICON101"
 			(at 0 -3.35 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -528,18 +516,6 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Artwork:Logo_Small"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "72c33d9c-efdf-4d89-8099-3c1f40313b3d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -549,6 +525,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -561,6 +538,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -578,6 +556,8 @@
 			)
 		)
 		(path "/ff5fa334-854e-4ca7-a359-9c419e0f5264")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(fp_poly
 			(pts
@@ -589,9 +569,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "584f099c-82cc-480e-b2d0-bdec9d0c863b")
+			(uuid "0cd29df8-ee9d-4319-8c37-6fc648814a8e")
 		)
 		(fp_poly
 			(pts
@@ -604,9 +584,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "4e8e16ae-3bc3-4fff-8bb5-682211218fae")
+			(uuid "05a40fda-5c22-40a7-9f6a-36495d05b444")
 		)
 		(fp_poly
 			(pts
@@ -627,9 +607,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "f740b042-d1d3-42ca-a2f3-ae9ee72066a1")
+			(uuid "6dfb8f07-d1b1-461e-a535-cec77fd23afa")
 		)
 		(fp_poly
 			(pts
@@ -641,9 +621,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "0f8de577-f131-4a90-b740-1107b729c968")
+			(uuid "b191b2bf-d4a6-415a-bbad-fe195e2133b2")
 		)
 		(fp_poly
 			(pts
@@ -656,9 +636,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "ad1aa2b5-892e-4ac6-95eb-d9c332834541")
+			(uuid "3dd9fb88-7ab0-4b93-8d2b-2e60f75cfa02")
 		)
 		(fp_poly
 			(pts
@@ -679,15 +659,15 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "fd2439b7-ebaa-4f8c-98ff-e9aaf0172c59")
+			(uuid "64c74db3-796a-4d34-b667-96e533bf038d")
 		)
 		(zone
 			(net 0)
 			(net_name "")
 			(layer "F.Cu")
-			(uuid "0ddc9015-ef9f-472d-bfdd-716da43bd77f")
+			(uuid "14aaf9b7-303c-4d8b-a2de-4faa8b568d1c")
 			(hatch edge 0.508)
 			(connect_pads
 				(clearance 0)
@@ -701,23 +681,28 @@
 				(copperpour not_allowed)
 				(footprints allowed)
 			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
 			(fill
 				(thermal_gap 0.508)
 				(thermal_bridge_width 0.508)
 			)
 			(polygon
 				(pts
-					(xy 120.95 112) (xy 125.55 112) (xy 125.55 107.995) (xy 120.95 107.995) (xy 120.95 108.6) (xy 121.35 109.8)
-					(xy 120.95 109.8)
+					(xy 121.45 112) (xy 126.05 112) (xy 126.05 107.995) (xy 121.45 107.995) (xy 121.45 108.6) (xy 121.85 109.8)
+					(xy 121.45 109.8)
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "6637470a-9f59-4c59-b41b-a7f9d26b0ab1")
 		(at 139 110)
-		(property "Reference" "H122"
+		(property "Reference" "H121"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -730,7 +715,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -743,19 +728,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "18e3c01c-fb87-4e0b-a1b8-9ee5f2faab71")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -764,6 +737,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -776,6 +750,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -792,7 +767,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/728e1799-19b2-425c-b782-409e717b52ad")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -801,9 +779,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "189ea50c-3d95-4939-899f-9c58dfeb6e20")
+			(uuid "d991166a-aae2-4ad0-a44d-bdd4ec5b1c9a")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -842,12 +820,13 @@
 			)
 			(uuid "0770a023-ea65-4789-b102-e5ef86c5068c")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_5.2mm"
 		(layer "F.Cu")
 		(uuid "70bcbbaf-216f-4922-bc35-22b0f1ee6177")
-		(at 131 110)
-		(property "Reference" "H105"
+		(at 132 110)
+		(property "Reference" "H113"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -860,7 +839,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_5.2mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -873,19 +852,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_5.2mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4d85e770-102d-4cad-b9de-7bd7833dfcf2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -894,6 +861,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -906,6 +874,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -922,7 +891,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/98ac4b2a-4d95-4694-a16b-703832ea3e92")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -931,9 +903,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "2defc503-25ce-4adb-aaca-518db65ac5cd")
+			(uuid "b9d15d93-2e8d-4c49-8e1c-4655166f898d")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -972,12 +944,13 @@
 			)
 			(uuid "75fd6ead-f137-4644-b067-c5f4563722a9")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_1mm"
 		(layer "F.Cu")
 		(uuid "75b13a4d-0f8b-4f32-a874-33c66bf04353")
 		(at 169.75 105.25)
-		(property "Reference" "H106"
+		(property "Reference" "H122"
 			(at 0 -2 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -1003,19 +976,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_1mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9183b3bc-bea8-4877-8a3a-ebf78fb560ac")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1024,6 +985,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1036,6 +998,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1052,7 +1015,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*")
 		(path "/fe49530f-fb70-42cd-8eec-8a43f7b0cde7")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -1061,23 +1027,24 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "df9ffca2-d7e5-47f8-a0b6-383c31b87749")
+			(uuid "a7eccdd6-d3cd-43ba-b721-927187aad72e")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0)
 			(size 1 1)
 			(drill 1)
 			(layers "*.Mask")
-			(uuid "c3209921-7977-44c6-a91a-5d821db68644")
+			(uuid "2b348794-c544-4f94-bd4e-f61697fbe096")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "7ba81130-b4c9-4fcf-ac78-5fe69d58787b")
 		(at 164.5 110)
-		(property "Reference" "H119"
+		(property "Reference" "H115"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -1090,7 +1057,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1103,19 +1070,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "720cdbe5-bd4d-4d18-974a-654c5d74d853")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1124,6 +1079,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1136,6 +1092,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1152,7 +1109,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/599ea613-a16e-4c58-bbef-223696fbd8d1")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -1161,9 +1121,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "e35baf5d-4776-4bb8-bb58-0ca3e222a95d")
+			(uuid "3e93ff1f-674b-46cd-95a0-f7b2d4dde9cc")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -1202,12 +1162,13 @@
 			)
 			(uuid "72953be6-79cb-47b7-9d67-0e113f2ab93d")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "7d790c0e-8808-4084-993d-74867927324c")
 		(at 275 110)
-		(property "Reference" "H107"
+		(property "Reference" "H102"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -1220,7 +1181,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1233,19 +1194,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1ee0e4eb-2261-438f-a32f-64a4aa6bc85b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1254,6 +1203,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1266,6 +1216,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1282,7 +1233,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/566d496b-8b12-4abd-a6fe-7ce683ab0b6d")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -1291,9 +1245,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "ddb102d3-dc41-4031-a614-1bf485751018")
+			(uuid "5156eebf-e664-436f-bf05-338ab313ec49")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -1332,12 +1286,13 @@
 			)
 			(uuid "03dc07df-b63f-424e-b0b0-2472dc48a629")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "91ba4663-b5cc-452d-8d59-63e565fd54a3")
 		(at 215.5 110)
-		(property "Reference" "H114"
+		(property "Reference" "H120"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -1350,7 +1305,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1363,19 +1318,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7e86c34c-21cb-4f35-9067-14bd14f7c103")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1384,6 +1327,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1396,6 +1340,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1412,7 +1357,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/6cc76df4-5ba4-467b-9eaa-b094869cd01d")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -1421,9 +1369,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "01aea939-cae9-4870-8b13-3dd3bfba1e89")
+			(uuid "1fddb45e-0822-4851-bfe6-6f42786bbe0c")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -1462,12 +1410,13 @@
 			)
 			(uuid "21824b76-21ba-4783-9663-3e3c6da679ea")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "96c59c5f-55ba-43c0-99a3-a656ceaaa73f")
 		(at 232.5 110)
-		(property "Reference" "H112"
+		(property "Reference" "H116"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -1480,7 +1429,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1493,19 +1442,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "74b7a16b-6f8f-49f7-b058-9845dd2390e1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1514,6 +1451,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1526,6 +1464,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1542,7 +1481,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/e9a0567d-b240-472b-b6f6-7dbc4d1d3108")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -1551,9 +1493,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "3f6f14ff-dc29-4a36-bdee-fe5cdc66c4d5")
+			(uuid "19a82a80-3058-4411-9460-f8843b35d1d7")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -1592,12 +1534,13 @@
 			)
 			(uuid "ab7fe4b7-1a15-42d0-965e-642f28472e05")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "97f4f177-b26a-4737-b2bb-a57eb652391f")
 		(at 190 110)
-		(property "Reference" "H116"
+		(property "Reference" "H106"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -1610,7 +1553,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1623,19 +1566,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0763c992-eb16-4311-99ef-103720b3062d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1644,6 +1575,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1656,6 +1588,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1672,7 +1605,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/3d0b6987-5e54-4df4-b923-f248f71f1206")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -1681,9 +1617,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "572c76e1-d56e-4a09-bc31-4a396069db0a")
+			(uuid "23883b67-f604-47f6-b9b9-4af9dd0de7b5")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -1722,12 +1658,13 @@
 			)
 			(uuid "64c59882-282b-4d62-b5d6-43ff95281ec4")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "a2f5cee5-82a5-4b24-b547-3e6494c8b046")
 		(at 181.5 110)
-		(property "Reference" "H117"
+		(property "Reference" "H109"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -1740,7 +1677,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1753,19 +1690,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "efb9bb0e-6dc2-46a0-9147-5edc5700d173")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1774,6 +1699,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1786,6 +1712,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1802,7 +1729,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/4af16624-e5e9-4975-8fdd-f178db4f2bbd")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -1811,9 +1741,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "7dbaec8d-1b52-447c-9654-177b08cb95e8")
+			(uuid "25368dc5-333f-4b5f-be9d-d9c452e4b5b6")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -1852,12 +1782,13 @@
 			)
 			(uuid "bf233bc3-8cee-4e41-94bb-2e39786027a9")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "a87ed5c0-f461-408c-b853-63dad2770b62")
 		(at 249.5 110)
-		(property "Reference" "H110"
+		(property "Reference" "H111"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -1870,7 +1801,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1883,19 +1814,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d6501603-af01-4f5d-8f41-6cd5413a89a7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1904,6 +1823,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1916,6 +1836,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1932,7 +1853,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/116ad519-9d7c-431a-bcba-65641ca826bd")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -1941,9 +1865,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "9ddcbaaa-1a71-4acf-a3dc-790e63c39ac4")
+			(uuid "f275c620-0349-490d-b0df-02085cfbd09d")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -1982,12 +1906,13 @@
 			)
 			(uuid "0ec4f883-b984-4b8c-b215-775a58d259bc")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "c4f27d14-6501-4c80-8f9c-781551743a50")
 		(at 241 110)
-		(property "Reference" "H111"
+		(property "Reference" "H114"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -2000,7 +1925,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2013,19 +1938,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "45fac0ab-4a02-43c6-920a-9f64724d6c97")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2034,6 +1947,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2046,6 +1960,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2062,7 +1977,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/75aae69a-ad1f-4261-84fa-43fc18140c51")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -2071,9 +1989,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "e036a0b6-d39f-4ed9-a304-7342e5d84028")
+			(uuid "f861332d-3dba-4a08-be5f-901d1da8e443")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -2112,12 +2030,13 @@
 			)
 			(uuid "50828a97-f3bb-4b47-801b-b15a19ba6802")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "c6782708-3128-4271-850f-57ae4eb8964a")
 		(at 224 110)
-		(property "Reference" "H113"
+		(property "Reference" "H118"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -2130,7 +2049,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2143,19 +2062,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ad11271f-79d1-4c86-a591-07336f9d82f8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2164,6 +2071,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2176,6 +2084,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2192,7 +2101,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/ebfda4b9-f41d-47f8-a32c-efa312c65f72")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -2201,9 +2113,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "1c3b9a74-676d-4245-9035-b0f5049cccd7")
+			(uuid "92ff0efc-d874-4740-af05-858b53877b69")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -2242,12 +2154,13 @@
 			)
 			(uuid "fc8eab38-7339-4042-af7e-b73e70fb844d")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "c93d8e39-f055-4083-be86-6586d0ce057a")
 		(at 156 110)
-		(property "Reference" "H120"
+		(property "Reference" "H117"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -2260,7 +2173,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2273,19 +2186,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b685e74c-9f58-46c0-b0e2-14bbb6ab1381")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2294,6 +2195,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2306,6 +2208,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2322,7 +2225,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/8d48cd7e-c998-49fb-b7ba-826c6b3e288e")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -2331,9 +2237,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "460ed24e-ade4-4d97-9caf-84fe4b5ec116")
+			(uuid "5e1d3d33-d929-4b7f-a1c0-97c1b90d8169")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -2372,12 +2278,13 @@
 			)
 			(uuid "fa4e80d5-e387-45de-8483-17cee851d90e")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "cce6370b-4868-4376-9320-e52726d238e9")
 		(at 198.5 110 90)
-		(property "Reference" "H115"
+		(property "Reference" "H103"
 			(at 0 -4 90)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -2390,7 +2297,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2403,19 +2310,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "71a46f40-36c7-41a9-9098-cecfb26b9345")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2424,6 +2319,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2436,6 +2332,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2452,7 +2349,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/bc74b301-54f7-4cab-a868-e7dd5ef01016")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -2461,9 +2361,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "9af3fe5d-d77e-40cf-a6ba-b1cf93c3a4e5")
+			(uuid "54a6f903-630c-4828-894c-76021046e52a")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 90)
@@ -2502,6 +2402,7 @@
 			)
 			(uuid "edcc5415-ff16-4195-9069-7a46a23a21ec")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_PCB_Devices:PCB_Button-top"
 		(layer "F.Cu")
@@ -2531,18 +2432,6 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_PCB_Devices:PCB_Button-top"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7d7681c1-d7ea-43f6-9b27-d498c3491bfa")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -2552,6 +2441,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2564,6 +2454,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2581,6 +2472,8 @@
 			)
 		)
 		(path "/96abbcfb-4646-4a7d-bbca-fde2aab97088")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(fp_line
 			(start 1.65 -5.1)
@@ -2590,7 +2483,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2004b25b-0a6a-4220-b385-de5bb3d0be28")
+			(uuid "63dbac73-4139-47bf-b2ef-6361671f5e34")
 		)
 		(fp_line
 			(start -1.65 -5.1)
@@ -2600,7 +2493,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8d23e993-7adb-4527-af91-a70a580e5c36")
+			(uuid "0337cb4c-b396-4cd0-b66e-8b2f1db4b4f0")
 		)
 		(fp_line
 			(start 1.65 5.1)
@@ -2610,7 +2503,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "52749369-c90c-4152-a45e-b549f95da2dd")
+			(uuid "bf5b0876-0297-4bdb-a11d-91ff128ce61f")
 		)
 		(fp_line
 			(start -1.65 5.1)
@@ -2620,42 +2513,43 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a8b3431b-4725-4594-b6fa-7ee08a376ff5")
+			(uuid "489cf3b3-4370-4d8b-a303-0aa3aa566f46")
 		)
 		(pad "" np_thru_hole circle
 			(at -1.4 -4.85 90)
 			(size 0.7 0.7)
 			(drill 0.7)
 			(layers "*.Mask")
-			(uuid "a0fd6e0d-9f81-44ee-b0d2-13d9b6ed1db7")
+			(uuid "3f858da6-67c9-462e-895b-17e44455539d")
 		)
 		(pad "" np_thru_hole circle
 			(at -1.4 4.85 90)
 			(size 0.7 0.7)
 			(drill 0.7)
 			(layers "*.Mask")
-			(uuid "73740b18-4d0d-4875-9216-49cf8e9a9ab4")
+			(uuid "00207203-235a-4793-9341-0ef983a4f866")
 		)
 		(pad "" np_thru_hole circle
 			(at 1.4 -4.85 90)
 			(size 0.7 0.7)
 			(drill 0.7)
 			(layers "*.Mask")
-			(uuid "374af02a-0324-47ff-aa18-68122adcbbb6")
+			(uuid "126a1caf-8122-4e0a-ba05-c2df65012784")
 		)
 		(pad "" np_thru_hole circle
 			(at 1.4 4.85 90)
 			(size 0.7 0.7)
 			(drill 0.7)
 			(layers "*.Mask")
-			(uuid "a87ee47b-7979-45bf-930a-354f071f4c55")
+			(uuid "f370b637-0562-4b12-9243-7da29669e0b5")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_5.2mm"
 		(layer "F.Cu")
 		(uuid "dcc66934-5ddb-468b-b54a-ce6d8b8caadd")
 		(at 207 85)
-		(property "Reference" "H103"
+		(property "Reference" "H107"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -2668,7 +2562,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_5.2mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2681,19 +2575,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_5.2mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0a3d5330-aaa8-4258-b227-d24f39218626")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2702,6 +2584,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2714,6 +2597,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2730,7 +2614,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/319787d4-c502-4634-86e8-9ce9ee884524")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -2739,9 +2626,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "bb969d94-38bf-47aa-aede-021573a55cd1")
+			(uuid "ae570db0-b54f-49cd-aa9b-bed3fb6986d9")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -2780,12 +2667,13 @@
 			)
 			(uuid "4024fcba-a7e4-4c2f-a19c-3f30ee603c2a")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "de73b453-4b75-4794-8092-4be5d1c41087")
 		(at 147.5 110)
-		(property "Reference" "H121"
+		(property "Reference" "H119"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -2798,7 +2686,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2811,19 +2699,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "51e03796-7ebb-45a9-b1b5-68a504cae848")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2832,6 +2708,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2844,6 +2721,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2860,7 +2738,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/935d6157-ba3f-424a-b504-929eab44642d")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -2869,9 +2750,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "1654484c-aba7-4da3-9971-eb078ec37388")
+			(uuid "99f635f2-d33b-4466-9a1b-85ac7de57750")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -2910,11 +2791,12 @@
 			)
 			(uuid "3b7e6112-f250-4437-bae9-b650d98e1f46")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_5.2mm"
 		(layer "F.Cu")
 		(uuid "f158958c-11f5-4dfc-99b8-275b15e7c1d7")
-		(at 283 85)
+		(at 282 85)
 		(property "Reference" "H101"
 			(at 0 -4 0)
 			(unlocked yes)
@@ -2928,7 +2810,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_5.2mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2941,19 +2823,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_5.2mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2ff5684b-6248-4d58-a1ca-effff2795659")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2962,6 +2832,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2974,6 +2845,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2990,7 +2862,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/a0a228dc-da6e-49d5-826e-22519883ae3b")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -2999,9 +2874,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "7e8a1306-a9b1-4a67-96a8-1aa88d731bbd")
+			(uuid "8918d43f-76e9-4961-96ea-b1b9cc8e7f80")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -3040,12 +2915,13 @@
 			)
 			(uuid "a12a3703-f865-454b-81e6-9e2f0db7b1a8")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Artwork:Board_express_Small"
 		(layer "F.Cu")
 		(uuid "f9bceaaa-a326-4b78-a136-5b79571595c4")
-		(at 291.25 110)
-		(property "Reference" "ICON101"
+		(at 290.75 110)
+		(property "Reference" "ICON102"
 			(at 0 -3 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -3071,18 +2947,6 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Artwork:Board_express_Small"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7b5d3d0d-0c9f-443b-bd75-bdd3d932a82d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -3092,6 +2956,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3104,6 +2969,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3121,6 +2987,8 @@
 			)
 		)
 		(path "/82938fd8-b6f1-4f0d-9acf-05afd98b7001")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(fp_poly
 			(pts
@@ -3132,9 +3000,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "a43a5561-0fdf-4c7a-8c15-0827d0debfa9")
+			(uuid "3b7fee42-3ead-46ef-9913-7b28bed2557a")
 		)
 		(fp_poly
 			(pts
@@ -3146,9 +3014,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "227a5c6a-a04f-4145-becf-07c3895e7261")
+			(uuid "3a78a4d5-13da-44b6-8474-fd2376360260")
 		)
 		(fp_poly
 			(pts
@@ -3177,9 +3045,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "e9fee349-6c0b-43cf-bc96-1a4120c7c2fc")
+			(uuid "1c4d41af-940e-4e91-a468-c4a474ea1d1b")
 		)
 		(fp_poly
 			(pts
@@ -3255,9 +3123,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "4aee5faa-ecb6-451f-a01d-cce12aaf376d")
+			(uuid "6ede63ba-b4c1-4072-a7d8-4c61e0267189")
 		)
 		(fp_poly
 			(pts
@@ -3327,9 +3195,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "e77e9a5e-1cc0-4e4d-9469-81fa56af0442")
+			(uuid "efb63521-0315-4e7f-a790-fb1ab7fff5f9")
 		)
 		(fp_poly
 			(pts
@@ -3419,9 +3287,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "a2f9ed4f-5fc4-481e-9b77-84858102a9dd")
+			(uuid "abc73c69-7e72-42d7-8b0e-c2cbaeefe653")
 		)
 		(fp_poly
 			(pts
@@ -3507,9 +3375,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "6222f6a8-2289-4c43-9d72-a04bdab1f56a")
+			(uuid "f4d58441-85e3-456c-918c-e315eaaaef9b")
 		)
 		(fp_poly
 			(pts
@@ -3593,9 +3461,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "9deea049-e8bc-47ba-b01e-249d1a88c799")
+			(uuid "871bddfa-ee3a-4758-95b6-944147095d96")
 		)
 		(fp_poly
 			(pts
@@ -3607,9 +3475,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "853664fd-8019-4114-a221-b27adab56c39")
+			(uuid "f42ab8e8-1891-4170-a6ec-f710b37fa58f")
 		)
 		(fp_poly
 			(pts
@@ -3621,9 +3489,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "20f348ff-5ad2-44aa-a40a-a967a9c0c8a8")
+			(uuid "ae4985d3-e29c-4e16-b159-cd1e67439f44")
 		)
 		(fp_poly
 			(pts
@@ -3652,9 +3520,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "ece61aaa-2dfd-45eb-a0dd-31e7d3ba5b72")
+			(uuid "8750e1a1-1fce-40c2-b9e4-d56dba8e4cee")
 		)
 		(fp_poly
 			(pts
@@ -3730,9 +3598,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "69a26cd5-1132-43ef-8b7e-15309358cf07")
+			(uuid "e3376f37-78e3-4f27-a8e5-3fac470488a4")
 		)
 		(fp_poly
 			(pts
@@ -3802,9 +3670,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "d3ec8b9a-eaa5-4be8-9c8c-a7fb6c990fb3")
+			(uuid "644fec53-1640-400e-b6c9-eda4bf31ae7f")
 		)
 		(fp_poly
 			(pts
@@ -3894,9 +3762,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "4e608cac-c6de-4dbb-bbe2-1b0843bef2b8")
+			(uuid "2c555cb1-a45c-4cc0-b79c-2e5038136d23")
 		)
 		(fp_poly
 			(pts
@@ -3982,9 +3850,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "1c0fff37-9094-46ee-8b05-56441ef3157a")
+			(uuid "418ffa54-ed13-4d97-8855-fd1f5b8b8f4d")
 		)
 		(fp_poly
 			(pts
@@ -4068,15 +3936,15 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "e05f56cf-6c97-4169-8b30-17fdc2be63f8")
+			(uuid "6ec81700-cd01-48c3-8c9f-07bff5b930dc")
 		)
 		(zone
 			(net 0)
 			(net_name "")
 			(layer "F.Cu")
-			(uuid "1dca83c9-b82c-45cd-a826-56787ac0bf42")
+			(uuid "cebae931-4248-4d98-8cec-8f4bcdfa1e73")
 			(hatch edge 0.508)
 			(connect_pads
 				(clearance 0)
@@ -4090,38 +3958,43 @@
 				(copperpour not_allowed)
 				(footprints not_allowed)
 			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
 			(fill
 				(thermal_gap 0.508)
 				(thermal_bridge_width 0.508)
 			)
 			(polygon
 				(pts
-					(xy 295.652788 111.179279) (xy 286.860623 111.179278) (xy 286.860623 108.851875) (xy 295.652788 108.851876)
+					(xy 295.152788 111.179279) (xy 286.360623 111.179278) (xy 286.360623 108.851875) (xy 295.152788 108.851876)
 				)
 			)
 		)
 		(group ""
-			(uuid "7cf986da-df0f-4b2e-b913-df508328a67f")
-			(members "227a5c6a-a04f-4145-becf-07c3895e7261" "4aee5faa-ecb6-451f-a01d-cce12aaf376d"
-				"6222f6a8-2289-4c43-9d72-a04bdab1f56a" "9deea049-e8bc-47ba-b01e-249d1a88c799"
-				"a2f9ed4f-5fc4-481e-9b77-84858102a9dd" "a43a5561-0fdf-4c7a-8c15-0827d0debfa9"
-				"e77e9a5e-1cc0-4e4d-9469-81fa56af0442" "e9fee349-6c0b-43cf-bc96-1a4120c7c2fc"
+			(uuid "a44b8868-e9ca-4a40-a5f2-81b908e0e4e1")
+			(members "1c4d41af-940e-4e91-a468-c4a474ea1d1b" "3a78a4d5-13da-44b6-8474-fd2376360260"
+				"3b7fee42-3ead-46ef-9913-7b28bed2557a" "6ede63ba-b4c1-4072-a7d8-4c61e0267189"
+				"871bddfa-ee3a-4758-95b6-944147095d96" "abc73c69-7e72-42d7-8b0e-c2cbaeefe653"
+				"efb63521-0315-4e7f-a790-fb1ab7fff5f9" "f4d58441-85e3-456c-918c-e315eaaaef9b"
 			)
 		)
 		(group ""
-			(uuid "a9969c66-a9dd-431c-9032-1276a5e4738a")
-			(members "1c0fff37-9094-46ee-8b05-56441ef3157a" "20f348ff-5ad2-44aa-a40a-a967a9c0c8a8"
-				"4e608cac-c6de-4dbb-bbe2-1b0843bef2b8" "69a26cd5-1132-43ef-8b7e-15309358cf07"
-				"853664fd-8019-4114-a221-b27adab56c39" "d3ec8b9a-eaa5-4be8-9c8c-a7fb6c990fb3"
-				"e05f56cf-6c97-4169-8b30-17fdc2be63f8" "ece61aaa-2dfd-45eb-a0dd-31e7d3ba5b72"
+			(uuid "0a8fdc96-d971-4617-bff1-0cc0ee28b44a")
+			(members "2c555cb1-a45c-4cc0-b79c-2e5038136d23" "418ffa54-ed13-4d97-8855-fd1f5b8b8f4d"
+				"644fec53-1640-400e-b6c9-eda4bf31ae7f" "6ec81700-cd01-48c3-8c9f-07bff5b930dc"
+				"8750e1a1-1fce-40c2-b9e4-d56dba8e4cee" "ae4985d3-e29c-4e16-b159-cd1e67439f44"
+				"e3376f37-78e3-4f27-a8e5-3fac470488a4" "f42ab8e8-1891-4170-a6ec-f710b37fa58f"
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
 		(layer "F.Cu")
 		(uuid "fc42cc9e-af41-4bd9-8d71-efe5c01f47dc")
 		(at 266.5 110)
-		(property "Reference" "H108"
+		(property "Reference" "H105"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -4134,7 +4007,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_2.4mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4147,19 +4020,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_2.4mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b8b8d7c5-dfc0-4e88-9fa1-655227fdb192")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4168,6 +4029,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -4180,6 +4042,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -4196,7 +4059,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/e8c9348e-ebf6-4575-9409-12a2a0754530")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -4205,9 +4071,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "ab464430-2c47-4928-9d23-cd4da7f22673")
+			(uuid "058ebd88-1d4d-48be-a0f7-8a8f5f27c22d")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -4246,12 +4112,13 @@
 			)
 			(uuid "48ed791a-9c89-4394-9d88-df98f457aea2")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2mm_Pad_5.2mm"
 		(layer "F.Cu")
 		(uuid "ff249cbb-3bae-4063-8ea6-c818104eed03")
-		(at 131 85)
-		(property "Reference" "H104"
+		(at 132 85)
+		(property "Reference" "H110"
 			(at 0 -4 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -4264,7 +4131,7 @@
 				)
 			)
 		)
-		(property "Value" "Mounting_Hole"
+		(property "Value" "MountingHole_2mm_Pad_5.2mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4277,19 +4144,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2mm_Pad_5.2mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "49cfcebd-ea85-41ce-9e03-cde4731ce3d0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4298,6 +4153,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -4310,6 +4166,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -4326,7 +4183,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/ff7338d3-651e-41af-8883-2fcfd9cca8c0")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -4335,9 +4195,9 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "76b2830c-56b8-4db5-91f9-7f493de0e7ca")
+			(uuid "bd0cec26-33a3-4db4-8d75-3b9809ff40ea")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 4 0)
@@ -4376,6 +4236,7 @@
 			)
 			(uuid "b348a214-8580-4b96-9394-bfc20803dcb7")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Production:Order_Number"
 		(layer "B.Cu")
@@ -4395,7 +4256,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "ORDER-NUMBER"
+		(property "Value" "Order_Number"
 			(at 0 -2.27 0)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -4409,18 +4270,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "V2_Production:Order_Number"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a6fb1ff6-7178-4ab1-acc2-67c816dfa981")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -4430,6 +4279,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -4442,6 +4292,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -4473,17 +4324,19 @@
 			)
 		)
 		(path "/7eb06b9d-d894-478a-bc35-8590f2ab48d6")
+		(sheetname "/")
+		(sheetfile "express-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_rect
-			(start 7 -0.75)
-			(end -7 0.75)
+			(start -7 0.75)
+			(end 7 -0.75)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "B.CrtYd")
-			(uuid "2263d373-e26d-462c-b7ef-134f806b648f")
+			(uuid "53c68b83-0a3a-451d-aa4f-f494bae7e3c6")
 		)
 		(fp_text user "${Order-Number}"
 			(at 0 0 0)
@@ -4498,6 +4351,7 @@
 				(justify mirror)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(gr_line
 		(start 117 81)
@@ -4620,10 +4474,13 @@
 				(xy 117.665108 114.83386) (xy 117.647178 114.826433) (xy 117.508863 114.752502) (xy 117.492726 114.74172)
 				(xy 117.371494 114.642228) (xy 117.357771 114.628505) (xy 117.258279 114.507273) (xy 117.247497 114.491136)
 				(xy 117.173566 114.352821) (xy 117.166139 114.334891) (xy 117.120614 114.184814) (xy 117.116828 114.16578)
-				(xy 117.100977 114.004842) (xy 117.1005 113.995138) (xy 117.1005 107.995) (xy 120.95 107.995) (xy 120.95 108.6)
-				(xy 121.009299 108.777896) (xy 121.306564 109.669694) (xy 121.307028 109.730877) (xy 121.271441 109.780649)
-				(xy 121.213395 109.799997) (xy 121.212644 109.8) (xy 120.95 109.8) (xy 120.95 112) (xy 120.950001 112)
-				(xy 125.549999 112) (xy 125.55 112) (xy 125.55 111.479057) (xy 201.5495 111.479057) (xy 201.590423 111.631784)
+				(xy 117.100977 114.004842) (xy 117.1005 113.995138) (xy 117.1005 108.6) (xy 121.45 108.6) (xy 121.509299 108.777896)
+				(xy 121.806564 109.669694) (xy 121.807028 109.730877) (xy 121.771441 109.780649) (xy 121.713395 109.799997)
+				(xy 121.712644 109.8) (xy 121.45 109.8) (xy 121.45 112) (xy 121.450001 112) (xy 126.049999 112)
+				(xy 126.05 112) (xy 126.05 108.520943) (xy 201.5495 108.520943) (xy 201.5495 108.679057) (xy 201.590423 108.831784)
+				(xy 201.66948 108.968716) (xy 201.770505 109.069741) (xy 201.798281 109.124256) (xy 201.7995 109.139743)
+				(xy 201.7995 110.860257) (xy 201.780593 110.918448) (xy 201.770509 110.930254) (xy 201.66948 111.031284)
+				(xy 201.590423 111.168216) (xy 201.5495 111.320943) (xy 201.5495 111.479057) (xy 201.590423 111.631784)
 				(xy 201.66948 111.768716) (xy 201.781284 111.88052) (xy 201.918216 111.959577) (xy 202.070943 112.0005)
 				(xy 202.070945 112.0005) (xy 202.229055 112.0005) (xy 202.229057 112.0005) (xy 202.381784 111.959577)
 				(xy 202.518716 111.88052) (xy 202.619741 111.779494) (xy 202.674256 111.751719) (xy 202.689743 111.7505)
@@ -4631,32 +4488,29 @@
 				(xy 211.618216 111.959577) (xy 211.770943 112.0005) (xy 211.770945 112.0005) (xy 211.929055 112.0005)
 				(xy 211.929057 112.0005) (xy 212.081784 111.959577) (xy 212.218716 111.88052) (xy 212.33052 111.768716)
 				(xy 212.409577 111.631784) (xy 212.4505 111.479057) (xy 212.4505 111.320943) (xy 212.409577 111.168216)
-				(xy 212.350875 111.066541) (xy 286.759801 111.066541) (xy 286.764889 111.111984) (xy 286.764889 111.111986)
-				(xy 286.804457 111.19444) (xy 286.804458 111.194441) (xy 286.875882 111.251562) (xy 286.965017 111.272036)
-				(xy 289.46569 111.275493) (xy 289.49694 111.275537) (xy 289.49694 111.275536) (xy 289.496949 111.275537)
-				(xy 289.542961 111.270385) (xy 289.542965 111.270382) (xy 289.551002 111.268071) (xy 289.551851 111.271023)
-				(xy 289.598246 111.26472) (xy 289.642333 111.284735) (xy 289.675627 111.311286) (xy 289.76479 111.331637)
-				(xy 290.007993 111.331637) (xy 290.007994 111.331637) (xy 290.053722 111.326485) (xy 290.136121 111.286803)
-				(xy 290.136123 111.2868) (xy 290.142843 111.281442) (xy 290.200126 111.25994) (xy 290.22669 111.262342)
-				(xy 290.277698 111.274036) (xy 292.03305 111.275703) (xy 295.543748 111.279038) (xy 295.543748 111.279037)
-				(xy 295.543754 111.279038) (xy 295.590279 111.273747) (xy 295.672559 111.233818) (xy 295.729365 111.162144)
-				(xy 295.749448 111.07292) (xy 295.7431 108.962427) (xy 295.737949 108.917317) (xy 295.698267 108.834918)
-				(xy 295.626764 108.777896) (xy 295.626763 108.777895) (xy 295.537601 108.757545) (xy 286.965301 108.757545)
-				(xy 286.965299 108.757545) (xy 286.919573 108.762696) (xy 286.837173 108.802379) (xy 286.780151 108.873882)
-				(xy 286.759801 108.963045) (xy 286.759801 111.066541) (xy 212.350875 111.066541) (xy 212.33052 111.031284)
-				(xy 212.229494 110.930258) (xy 212.201719 110.875744) (xy 212.2005 110.860257) (xy 212.2005 109.139743)
-				(xy 212.219407 109.081552) (xy 212.22949 109.069745) (xy 212.33052 108.968716) (xy 212.409577 108.831784)
+				(xy 212.33052 111.031284) (xy 212.229494 110.930258) (xy 212.201719 110.875744) (xy 212.2005 110.860257)
+				(xy 212.2005 109.139743) (xy 212.219407 109.081552) (xy 212.22949 109.069745) (xy 212.33052 108.968716)
+				(xy 212.333794 108.963045) (xy 286.259801 108.963045) (xy 286.259801 111.066541) (xy 286.264889 111.111984)
+				(xy 286.264889 111.111986) (xy 286.304457 111.19444) (xy 286.304458 111.194441) (xy 286.375882 111.251562)
+				(xy 286.465017 111.272036) (xy 288.96569 111.275493) (xy 288.99694 111.275537) (xy 288.99694 111.275536)
+				(xy 288.996949 111.275537) (xy 289.042961 111.270385) (xy 289.042965 111.270382) (xy 289.051002 111.268071)
+				(xy 289.051851 111.271023) (xy 289.098246 111.26472) (xy 289.142333 111.284735) (xy 289.175627 111.311286)
+				(xy 289.26479 111.331637) (xy 289.507993 111.331637) (xy 289.507994 111.331637) (xy 289.553722 111.326485)
+				(xy 289.636121 111.286803) (xy 289.636123 111.2868) (xy 289.642843 111.281442) (xy 289.700126 111.25994)
+				(xy 289.72669 111.262342) (xy 289.777698 111.274036) (xy 291.53305 111.275703) (xy 295.043748 111.279038)
+				(xy 295.043748 111.279037) (xy 295.043754 111.279038) (xy 295.090279 111.273747) (xy 295.172559 111.233818)
+				(xy 295.229365 111.162144) (xy 295.249448 111.07292) (xy 295.2431 108.962427) (xy 295.237949 108.917317)
+				(xy 295.198267 108.834918) (xy 295.126764 108.777896) (xy 295.126763 108.777895) (xy 295.037601 108.757545)
+				(xy 286.465301 108.757545) (xy 286.465299 108.757545) (xy 286.419573 108.762696) (xy 286.337173 108.802379)
+				(xy 286.280151 108.873882) (xy 286.259801 108.963045) (xy 212.333794 108.963045) (xy 212.409577 108.831784)
 				(xy 212.4505 108.679057) (xy 212.4505 108.520943) (xy 212.409577 108.368216) (xy 212.33052 108.231284)
 				(xy 212.218716 108.11948) (xy 212.081784 108.040423) (xy 211.929057 107.9995) (xy 211.770943 107.9995)
 				(xy 211.618216 108.040423) (xy 211.481284 108.11948) (xy 211.380258 108.220505) (xy 211.325744 108.248281)
 				(xy 211.310257 108.2495) (xy 202.689743 108.2495) (xy 202.631552 108.230593) (xy 202.619745 108.220509)
 				(xy 202.518716 108.11948) (xy 202.381784 108.040423) (xy 202.229057 107.9995) (xy 202.070943 107.9995)
 				(xy 201.918216 108.040423) (xy 201.781284 108.11948) (xy 201.66948 108.231284) (xy 201.590423 108.368216)
-				(xy 201.5495 108.520943) (xy 201.5495 108.679057) (xy 201.590423 108.831784) (xy 201.66948 108.968716)
-				(xy 201.770505 109.069741) (xy 201.798281 109.124256) (xy 201.7995 109.139743) (xy 201.7995 110.860257)
-				(xy 201.780593 110.918448) (xy 201.770509 110.930254) (xy 201.66948 111.031284) (xy 201.590423 111.168216)
-				(xy 201.5495 111.320943) (xy 201.5495 111.479057) (xy 125.55 111.479057) (xy 125.55 107.995) (xy 120.95 107.995)
-				(xy 117.1005 107.995) (xy 117.1005 105.323918) (xy 168.9995 105.323918) (xy 169.028342 105.468913)
+				(xy 201.5495 108.520943) (xy 126.05 108.520943) (xy 126.05 107.995) (xy 121.45 107.995) (xy 121.45 108.6)
+				(xy 117.1005 108.6) (xy 117.1005 105.176082) (xy 168.9995 105.176082) (xy 168.9995 105.323918) (xy 169.028342 105.468913)
 				(xy 169.084916 105.605495) (xy 169.167049 105.728416) (xy 169.271584 105.832951) (xy 169.394505 105.915084)
 				(xy 169.531087 105.971658) (xy 169.676082 106.0005) (xy 169.676083 106.0005) (xy 169.823917 106.0005)
 				(xy 169.823918 106.0005) (xy 169.968913 105.971658) (xy 170.105495 105.915084) (xy 170.228416 105.832951)
@@ -4665,14 +4519,15 @@
 				(xy 170.228416 104.667049) (xy 170.105495 104.584916) (xy 170.105493 104.584915) (xy 169.968914 104.528342)
 				(xy 169.823918 104.4995) (xy 169.676082 104.4995) (xy 169.676081 104.4995) (xy 169.531085 104.528342)
 				(xy 169.394506 104.584915) (xy 169.271585 104.667048) (xy 169.167048 104.771585) (xy 169.084915 104.894506)
-				(xy 169.028342 105.031085) (xy 169.028342 105.031087) (xy 168.9995 105.176082) (xy 168.9995 105.323918)
-				(xy 117.1005 105.323918) (xy 117.1005 81.004861) (xy 117.100977 80.995157) (xy 117.116828 80.834219)
-				(xy 117.120614 80.815185) (xy 117.166139 80.665108) (xy 117.173566 80.647178) (xy 117.247497 80.508863)
-				(xy 117.258274 80.492732) (xy 117.357774 80.37149) (xy 117.37149 80.357774) (xy 117.492732 80.258274)
-				(xy 117.508863 80.247497) (xy 117.562447 80.218856) (xy 117.647178 80.173566) (xy 117.665106 80.166139)
-				(xy 117.815189 80.120613) (xy 117.834215 80.116828) (xy 117.995157 80.100976) (xy 118.004861 80.1005)
-				(xy 118.026929 80.1005) (xy 295.973071 80.1005) (xy 295.995139 80.1005)
+				(xy 169.028342 105.031085) (xy 169.028342 105.031087) (xy 168.9995 105.176082) (xy 117.1005 105.176082)
+				(xy 117.1005 81.004861) (xy 117.100977 80.995157) (xy 117.116828 80.834219) (xy 117.120614 80.815185)
+				(xy 117.166139 80.665108) (xy 117.173566 80.647178) (xy 117.247497 80.508863) (xy 117.258274 80.492732)
+				(xy 117.357774 80.37149) (xy 117.37149 80.357774) (xy 117.492732 80.258274) (xy 117.508863 80.247497)
+				(xy 117.562447 80.218856) (xy 117.647178 80.173566) (xy 117.665106 80.166139) (xy 117.815189 80.120613)
+				(xy 117.834215 80.116828) (xy 117.995157 80.100976) (xy 118.004861 80.1005) (xy 118.026929 80.1005)
+				(xy 295.973071 80.1005) (xy 295.995139 80.1005)
 			)
 		)
 	)
+	(embedded_fonts no)
 )
