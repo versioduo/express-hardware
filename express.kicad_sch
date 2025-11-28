@@ -3510,6 +3510,98 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "V2_Mechanical:MountingHole_2mm"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_2mm"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "V2_Mechanical:MountingHole_2mm"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Enable" "0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_2mm_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "V2_Mechanical:MountingHole_3mm"
 			(pin_names
 				(offset 1.016)
@@ -4164,101 +4256,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "V2_Spacer_Wurth:9774030243"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SPACER"
-				(at 0 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "9774030243"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "V2_Spacer_Wurth:9774030243"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Enable" "0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "9774030243_1_0"
-				(circle
-					(center 0 0)
-					(radius 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
@@ -4726,12 +4723,6 @@
 		(uuid "0b51a557-1b5b-4034-9abe-48ce59094040")
 	)
 	(junction
-		(at 167.64 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0fdf69b5-4bdc-499f-bd9e-f7ebfdab5eff")
-	)
-	(junction
 		(at 201.93 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4754,24 +4745,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25691bf1-5724-4ce8-9df6-2d05f9352df4")
-	)
-	(junction
-		(at 167.64 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "26ddb1e2-f3a3-4e98-b151-cbf4aee1b2e3")
-	)
-	(junction
-		(at 57.15 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "27409ceb-1a41-49ba-b35a-d59505151974")
-	)
-	(junction
-		(at 57.15 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2dde543a-ffc1-4d1f-86ad-53e5debe0890")
 	)
 	(junction
 		(at 182.88 38.1)
@@ -4802,12 +4775,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8096dd96-e9f0-4155-a951-ef2345a9978a")
-	)
-	(junction
-		(at 167.64 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8451dfe7-3b8d-4f15-8fe5-4e92d1599b89")
 	)
 	(junction
 		(at 26.67 41.91)
@@ -4856,12 +4823,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d18297a1-9410-45ee-a790-87fdfe411436")
-	)
-	(junction
-		(at 167.64 180.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dba54d3b-a0f0-42e5-bb0e-b8f36dcafdc4")
 	)
 	(junction
 		(at 21.59 41.91)
@@ -4972,16 +4933,6 @@
 			(type default)
 		)
 		(uuid "0bbdc798-83f9-4d66-a162-d00f6bf706f6")
-	)
-	(wire
-		(pts
-			(xy 167.64 187.96) (xy 167.64 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c240a3d-f7b2-48cb-bece-ca62f5416e47")
 	)
 	(wire
 		(pts
@@ -5465,16 +5416,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 165.1) (xy 167.64 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c87029f-7db8-4020-8606-32b54bd64d57")
-	)
-	(wire
-		(pts
 			(xy 78.74 177.8) (xy 90.17 177.8)
 		)
 		(stroke
@@ -5675,16 +5616,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 172.72) (xy 167.64 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97efbd83-fb9c-420c-8aff-4f640f080565")
-	)
-	(wire
-		(pts
 			(xy 67.31 31.75) (xy 67.31 20.32)
 		)
 		(stroke
@@ -5832,16 +5763,6 @@
 			(type default)
 		)
 		(uuid "c0afe99c-283e-4824-b44c-95ef6f07732a")
-	)
-	(wire
-		(pts
-			(xy 167.64 157.48) (xy 167.64 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0b5b731-23c6-4934-8468-6b4d49b6b8a7")
 	)
 	(wire
 		(pts
@@ -6095,16 +6016,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 25.4) (xy 48.26 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4130b9e-812a-486e-bb57-6821fda0ef49")
-	)
-	(wire
-		(pts
 			(xy 110.49 193.04) (xy 123.19 193.04)
 		)
 		(stroke
@@ -6202,16 +6113,6 @@
 			(type default)
 		)
 		(uuid "fc03207b-8064-497a-b3f6-8f800fe967bc")
-	)
-	(wire
-		(pts
-			(xy 57.15 20.32) (xy 48.26 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc8747e5-e731-4531-aba7-612da88fc04d")
 	)
 	(label "Analog-7"
 		(at 105.41 39.37 180)
@@ -7429,76 +7330,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 57.15 22.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "11a6ea56-49a7-4808-8a7f-d048ab9cf28f")
-		(property "Reference" "C102"
-			(at 59.69 21.5962 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0u1"
-			(at 59.69 24.1362 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 57.15 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 57.15 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 57.15 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "20448556-0f90-4bd6-a10d-1331852afc2b")
-		)
-		(pin "2"
-			(uuid "55bce22a-25fa-4f26-9980-6363aff909cb")
-		)
-		(instances
-			(project "express"
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "C102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 88.9 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8341,32 +8172,31 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Spacer_Wurth:9774030243")
-		(at 172.72 165.1 0)
+		(lib_id "V2_Mechanical:MountingHole_2mm")
+		(at 172.72 167.64 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
+		(exclude_from_sim no)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "3b61ee34-d016-4981-9fdc-4ceeb229f039")
-		(property "Reference" "SPACER102"
-			(at 176.53 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "9774030243"
-			(at 182.88 166.37 0)
+		(property "Reference" "H104"
+			(at 172.72 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "V2_Spacer_Wurth:9774030243"
+		(property "Value" "MountingHole_2mm"
+			(at 172.72 164.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_Mechanical:MountingHole_2mm"
 			(at 172.72 172.72 0)
 			(effects
 				(font
@@ -8376,7 +8206,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 165.1 0)
+			(at 172.72 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8384,8 +8214,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 172.72 165.1 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 172.72 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8393,13 +8223,19 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "cbd101c3-f5d2-4d3e-9aa9-47221b333a38")
+		(property "Sim.Enable" "0"
+			(at 172.72 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(instances
 			(project "express"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "SPACER102")
+					(reference "H104")
 					(unit 1)
 				)
 			)
@@ -8472,33 +8308,32 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Spacer_Wurth:9774030243")
-		(at 172.72 187.96 0)
+		(lib_id "V2_Mechanical:MountingHole_2mm")
+		(at 172.72 194.31 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
+		(exclude_from_sim no)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "4a68680c-09d9-453c-bcaf-9ac4f45591cd")
-		(property "Reference" "SPACER105"
-			(at 176.53 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "9774030243"
-			(at 182.88 189.23 0)
+		(property "Reference" "H108"
+			(at 172.72 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "V2_Spacer_Wurth:9774030243"
-			(at 172.72 195.58 0)
+		(property "Value" "MountingHole_2mm"
+			(at 172.72 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_Mechanical:MountingHole_2mm"
+			(at 172.72 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8507,7 +8342,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 187.96 0)
+			(at 172.72 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8515,8 +8350,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 172.72 187.96 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 172.72 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8524,13 +8359,19 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "30a5c5b0-3b7c-449c-9637-8f70fb804c1f")
+		(property "Sim.Enable" "0"
+			(at 172.72 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(instances
 			(project "express"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "SPACER105")
+					(reference "H108")
 					(unit 1)
 				)
 			)
@@ -8759,7 +8600,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "593af867-4f15-4e4b-bdf7-9812dbadbea2")
-		(property "Reference" "H103"
+		(property "Reference" "H105"
 			(at 251.46 160.02 0)
 			(effects
 				(font
@@ -8806,7 +8647,7 @@
 		(instances
 			(project "express"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "H103")
+					(reference "H105")
 					(unit 1)
 				)
 			)
@@ -9283,99 +9124,32 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 167.64 187.96 0)
+		(lib_id "V2_Mechanical:MountingHole_2mm")
+		(at 172.72 176.53 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6ab29a32-1749-4137-8f45-92a101da895a")
-		(property "Reference" "#PWR0129"
-			(at 167.64 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 167.64 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 167.64 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "937c745e-2b93-4dc4-b4a7-ed89e8590578")
-		)
-		(instances
-			(project ""
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#PWR0129")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "V2_Spacer_Wurth:9774030243")
-		(at 172.72 172.72 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "6cd046e4-3a13-4326-82b8-f9205dfbba3d")
-		(property "Reference" "SPACER103"
-			(at 176.53 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "9774030243"
-			(at 182.88 173.99 0)
+		(property "Reference" "H106"
+			(at 172.72 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "V2_Spacer_Wurth:9774030243"
-			(at 172.72 180.34 0)
+		(property "Value" "MountingHole_2mm"
+			(at 172.72 173.355 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_Mechanical:MountingHole_2mm"
+			(at 172.72 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9384,7 +9158,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 172.72 0)
+			(at 172.72 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9392,8 +9166,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 172.72 172.72 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 172.72 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9401,13 +9175,19 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "ac782398-6d4a-46b2-80ef-d9c3be318c73")
+		(property "Sim.Enable" "0"
+			(at 172.72 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(instances
 			(project "express"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "SPACER103")
+					(reference "H106")
 					(unit 1)
 				)
 			)
@@ -9737,33 +9517,32 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Spacer_Wurth:9774030243")
-		(at 172.72 180.34 0)
+		(lib_id "V2_Mechanical:MountingHole_2mm")
+		(at 172.72 185.42 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
+		(exclude_from_sim no)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "8449623a-7a38-486c-8453-2ff54b300ce2")
-		(property "Reference" "SPACER104"
-			(at 176.53 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "9774030243"
-			(at 182.88 181.61 0)
+		(property "Reference" "H107"
+			(at 172.72 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "V2_Spacer_Wurth:9774030243"
-			(at 172.72 187.96 0)
+		(property "Value" "MountingHole_2mm"
+			(at 172.72 182.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_Mechanical:MountingHole_2mm"
+			(at 172.72 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9772,7 +9551,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 180.34 0)
+			(at 172.72 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9780,8 +9559,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 172.72 180.34 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 172.72 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9789,13 +9568,19 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "c0f67c72-6565-4ada-b50e-12b7658aa200")
+		(property "Sim.Enable" "0"
+			(at 172.72 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(instances
 			(project "express"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "SPACER104")
+					(reference "H107")
 					(unit 1)
 				)
 			)
@@ -11070,33 +10855,32 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Spacer_Wurth:9774030243")
-		(at 172.72 157.48 0)
+		(lib_id "V2_Mechanical:MountingHole_2mm")
+		(at 172.72 158.75 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
+		(exclude_from_sim no)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "c83f660c-602e-4fd3-89a2-9ee9568f5a0e")
-		(property "Reference" "SPACER101"
-			(at 176.53 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "9774030243"
-			(at 182.88 158.75 0)
+		(property "Reference" "H103"
+			(at 172.72 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "V2_Spacer_Wurth:9774030243"
-			(at 172.72 165.1 0)
+		(property "Value" "MountingHole_2mm"
+			(at 172.72 155.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_Mechanical:MountingHole_2mm"
+			(at 172.72 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11105,7 +10889,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 157.48 0)
+			(at 172.72 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11113,8 +10897,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 172.72 157.48 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 172.72 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11122,13 +10906,19 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "f3e49940-c483-4679-801f-bc19b73756cb")
+		(property "Sim.Enable" "0"
+			(at 172.72 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(instances
 			(project "express"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "SPACER101")
+					(reference "H103")
 					(unit 1)
 				)
 			)
@@ -11862,7 +11652,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 48.26 22.86 0)
+		(at 57.15 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11871,7 +11661,7 @@
 		(fields_autoplaced yes)
 		(uuid "f83ede28-574b-4197-be28-29b45cfdcba9")
 		(property "Reference" "C101"
-			(at 50.8 21.5962 0)
+			(at 59.69 21.5962 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11880,7 +11670,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 50.8 24.1362 0)
+			(at 59.69 24.1362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11889,7 +11679,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 48.26 22.86 0)
+			(at 57.15 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11898,7 +11688,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 22.86 0)
+			(at 57.15 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11907,7 +11697,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 48.26 22.86 0)
+			(at 57.15 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
